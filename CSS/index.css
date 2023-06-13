@@ -103,6 +103,8 @@ box-shadow: 3px 1px 2px 3px black;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
+    padding: auto;
+    bottom: 18px;
 }
 .prod{
 text-align: center;
@@ -121,17 +123,29 @@ visibility: hidden;
 #Men{
     background-image: url(https://i.postimg.cc/xj6JrgsM/men.jpg);
     font-family:'Montserrat', sans-serif ;
+    background-repeat: no-repeat;
 }
+
 #Women{
     background-image: url(https://i.postimg.cc/gjH9dqrX/female.webp);
         font-family:'Montserrat', sans-serif ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 }
 #Boys{
     background-image: url(https://i.postimg.cc/9fcHvRJN/boys.jpg);
         font-family:'Montserrat', sans-serif ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 }
+
 
 #Girls{
     background-image: url(https://i.postimg.cc/4NcQ6C85/girl.png);
         font-family:'Montserrat', sans-serif ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 }
