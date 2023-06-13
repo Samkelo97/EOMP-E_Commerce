@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rajdhani:wght@300&family=Teko:wght@700&display=swap');
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 150px;
+}
+.about{
+    height: 75rem;
+}
+.story{
+    font-size:15px;
+    margin-inline:150px;
+    font-family:'Montserrat', sans-serif ;
+    margin-top: 50px;
+}
+
+
+.containers {
+    border-radius: 30px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+   
+}
+input[type=submit]:hover {
+    scale: 1.1;
+    box-shadow: 1px 1px 1px 2px white;
+}
+input[type=submit] {
+   color:white;
+    border:none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Bruno Ace SC', cursive;
+    background-color: black;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+    background-color: lightgrey;
+}
+
+
+.New-deals{
+    text-align: left;
+    margin-left: 180px;
+    margin-top: 180px;
+}
+.card{
+    margin: auto;
+    margin-top: -200px;
+    float: right;
+    margin-right: 180px;
+    background-image: url(https://i.postimg.cc/mhfmcfw2/winter-hats.webp);
+}
+.cards{
+    background-image: url(https://i.postimg.cc/c1fWmQK2/nike-winter-shoes.png);
+    background-size: cover;
+    float: right;
+    margin-right: -30px;
+    margin: auto;
+    margin-top: -100px;
+}
+.shop{
+    background-color: black;
+    color: white;
+}
+.shop:hover{
+    scale: 1.1;
+}
+h1,h2,h3,p,h6,span{
+    font-family:'Montserrat', sans-serif ;
+}
