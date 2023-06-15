@@ -1,9 +1,11 @@
 .card{
-    width:200px;
-    margin: auto;
+    width: 200px;
+
+}
+.Products{
     display: flex;
 }
-.filter{
+/* .filter{
     margin-left: 20px;
     margin-top: 50px;
-}
+} */
