@@ -2,7 +2,8 @@
 
 .landing{
     background-color: grey;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif
+
 }
 .categories{
     font-family:'Montserrat', sans-serif;
@@ -10,6 +11,7 @@
 #third{
     background-image: url(https://i.postimg.cc/9FmsGQtP/nike-addidas-and-under-armor.webp);
     background-attachment: fixed;
+    background-size: cover !important;
 }
 #first{
     background-image: url(https://i.postimg.cc/8CGcf8J9/family-addidas.jpg);

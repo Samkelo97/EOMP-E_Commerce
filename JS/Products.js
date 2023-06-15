@@ -7,6 +7,7 @@ let Items = [
   price:"1 356",
 brand:"Nike",
 category:"Pants",
+quantity:"5",
 },
 {
   id:14,
@@ -15,6 +16,7 @@ category:"Pants",
   price:"1 259",
 brand:"Nike",
 category:"pants",
+quantity:"5",
 },
 {
   id:15,
@@ -23,6 +25,7 @@ category:"pants",
   price:"1 356",
 brand:"Nike",
 category:"pants",
+quantity:"5"
 }
 ,
 {
@@ -32,6 +35,7 @@ category:"pants",
   price:"1 099",
 brand:"addidas",
 category:"pants",
+quantity:"5"
 }
 ,
 {
@@ -41,6 +45,7 @@ category:"pants",
   price:"2 299",
 brand:"Addidas",
 category:"pants",
+quantity:"5"
 }
 ,
 {
@@ -50,6 +55,7 @@ category:"pants",
   price:"1 899",
 brand:"Addidas",
 category:"pants",
+quantity:"4"
 }
 ,
 {
@@ -58,7 +64,8 @@ category:"pants",
   desc:"pique track pants",
   price:"1 999",
 brand:"UA",
-category:"pants"
+category:"pants",
+quantity:"5"
 }
 ,
 {
@@ -67,7 +74,8 @@ category:"pants"
   desc:"blue pique track pants",
   price:"1 599",
 brand:"UA",
-category:"pants"
+category:"pants",
+quantity:"6"
 }
 ,
 {
@@ -76,7 +84,8 @@ category:"pants"
   desc:"grey pants",
   price:"1 399",
 brand:"UA",
-category:"pants"
+category:"pants",
+quantity:"8"
 }
 ,
 {
@@ -85,7 +94,8 @@ category:"pants"
   desc:"AT pants",
   price:"1 399",
 brand:"NB",
-category:"pants"
+category:"pants",
+quantity:"8"
 }
 ,
 {
@@ -94,7 +104,8 @@ category:"pants"
   desc:"Pimpact core pants",
   price:"1 299",
   brand:"NB",
-  category:"pants"
+  category:"pants",
+  quantity:"6"
 
 }
 ,
@@ -104,7 +115,8 @@ category:"pants"
   desc:"grey pants",
   price:"1 899",
   brand: "NB",
-  category:"pants"
+  category:"pants",
+  quantity:"8"
 }
 ,
 
@@ -115,6 +127,7 @@ category:"pants"
   price: "1 800",
   brand:"Nike",
   category:"jacket",
+  quantity:"8"
 },
 {
   id: 2,
@@ -123,6 +136,7 @@ category:"pants"
   price: "2 899",
   brand:"Nike",
   category:"jacket",
+  quantity:"9"
 },
 {
   id: 3,
@@ -131,6 +145,7 @@ category:"pants"
   price: "1 899",
   brand:"Nike",
   category:"jacket",
+  quantity:"8"
 },
 {
   id: 4,
@@ -139,6 +154,7 @@ category:"pants"
   price: "1 899",
   Brand:"Addidas",
   category:"jacket",
+  quantity:"8"
 },
 {
   id: 5,
@@ -147,6 +163,7 @@ category:"pants"
   price: "1 700",
   brand:"Addidas",
   category:"jacket",
+  quantity:"8"
 },
 {
     id:6,
@@ -155,6 +172,7 @@ category:"pants"
     price:"1 499",
     brand:"Addidas",
     category:"jacket",
+    quantity:"8"
 
 },
 {
@@ -164,6 +182,7 @@ category:"pants"
   price:"2 399",
   brand:"UA",
   category:"jacket",
+  quantity:"8"
 
 },
 {
@@ -173,6 +192,7 @@ desc:"gold gear jacket",
 price:"4 356",
 brand:"UA",
 category:"jacket",
+quantity:"8"
 
 },
 {
@@ -182,6 +202,7 @@ desc:"fore front jacket",
 price:"4 356",
 brand:"UA",
 category:"jacket",
+quantity:"6"
 
 },
 {
@@ -191,6 +212,7 @@ desc:"half zip top",
 price:"4 356",
 brand:"NB",
 category:"jacket",
+quantity:"7"
 
 },
 {
@@ -200,6 +222,7 @@ desc:"hoops hoodie",
 price:"4 356",
 brand:"NB",
 category:"jacket",
+quantity:"8"
 
 },
 {
@@ -209,6 +232,7 @@ desc:"AT jacket",
 price:"4 356",
 brand:"NB",
 category:"jacket",
+quantity:"7"
 
 },
 {
@@ -218,6 +242,7 @@ category:"jacket",
   price: "399",
   brand:"Nike",
   category:"caps",
+  quantity:"6"
 },
 {
   id: 2,
@@ -226,6 +251,7 @@ category:"jacket",
   price: "399",
   brand:"Nike",
   category:"caps",
+  quantity:"6"
 },
 {
   id: 3,
@@ -234,6 +260,7 @@ category:"jacket",
   price: "399",
   brand:"Nike",
   category:"caps",
+  quantity:"6"
 },
 {
   id: 4,
@@ -242,6 +269,7 @@ category:"jacket",
   price: "359",
   brand:"Addidas",
   category:"caps",
+  quantity:"9"
 },
 {
   id: 5,
@@ -250,6 +278,7 @@ category:"jacket",
   price: "359",
   brand:"UA",
   category:"caps",
+  quantity:"8"
 },
 {
     id:6,
@@ -258,6 +287,7 @@ category:"jacket",
     price:"399",
     brand:"UA",
     category:"caps",
+    quantity:"7"
 
 },
 {
@@ -267,6 +297,7 @@ category:"jacket",
   price:"399",
   brand:"UA",
   category:"caps",
+  quantity:"8"
 
 },
 {
@@ -276,6 +307,7 @@ desc:"blitz cap",
 price:"399",
 brand:"UA",
 category:"caps",
+quantity:"9"
 
 },
 {
@@ -285,6 +317,7 @@ desc:"blitz cap",
 price:"349",
 brand:"UA",
 category:"caps",
+quantity:"9"
 
 },
 {
@@ -294,6 +327,7 @@ desc:"classic cap",
 price:"489",
 brand:"NB",
 category:"caps",
+quantity:"9"
 
 },
 {
@@ -303,6 +337,7 @@ desc:"running cap",
 price:"399",
 brand:"NB",
 category:"caps",
+quantity:"8"
 
 },
 {
@@ -312,6 +347,7 @@ desc:"haze running cap",
 price:"399",
 brand:"NB",
 category:"caps",
+quantity:"5"
 },
 {
   id: 1,
@@ -320,6 +356,7 @@ category:"caps",
   price: "2 799",
   brand:"Nike",
   category:"sneakers",
+  quantity:"5"
 },
 {
   id: 2,
@@ -328,6 +365,7 @@ category:"caps",
   price: "2 399",
   brand:"Nike",
   category:"sneakers",
+  quantity:"5"
 },
 {
   id: 3,
@@ -336,6 +374,7 @@ category:"caps",
   price: "2 299",
   brand:"Nike",
   category:"sneakers",
+  quantity:"3"
 },
 {
   id: 4,
@@ -344,6 +383,7 @@ category:"caps",
   price: "2 199",
   brand:"Addidas",
   category:"sneakers",
+  quantity:"4"
 },
 {
   id: 5,
@@ -352,6 +392,7 @@ category:"caps",
   price: "2 299",
   brand:"Addidas",
   category:"sneakers",
+  quantity:"5"
 },
 
 {
@@ -361,7 +402,7 @@ desc:"D rose son of chi",
 price:"2 599",
 brand:"Addidas",
 category:"sneakers",
-quantity:"2"
+quantity:"4"
 },
 {
     id:6,
@@ -379,7 +420,7 @@ quantity:"3"
   price:"3 999",
   brand:"UA",
   category:"sneakers",
-quantity:"1"
+quantity:"8"
 },
 {
 id:8,
@@ -388,7 +429,7 @@ desc:"original sneaker",
 price:"2 399",
 brand:"UA",
 category:"sneakers",
-quantity:"2"
+quantity:"7"
 },
 
 {
@@ -398,7 +439,7 @@ desc:"Remote sneaker",
 price:"1 899",
 brand:"NB",
 category:"sneakers",
-quantity:"2"
+quantity:"5"
 },
 {
 id:11,
@@ -407,7 +448,7 @@ desc:"Original runner",
 price:"4 399",
 brand:"NB",
 category:"sneakers",
-quantity:"2"
+quantity:"4"
 },
 {
 id:
@@ -418,7 +459,7 @@ desc:"Original sneaker",
 price:"1 399",
 brand:"NB",
 category:"sneakers",
-quantity:"2"
+quantity:"10"
 
 },
 ];
@@ -489,12 +530,12 @@ document.getElementById('clear-filter-button').addEventListener('click', () => {
 
 // add to cart
 let shoppingCart = JSON.parse(localStorage.getItem("cartProducts")) || [];
-function addToCart(dataId) {
-    const product = Items.find((data) => data.id === dataId);
+function addToCart(productId) {
+    const product = Items.find((product) => product.id === productId);
     if (product) {
-        if (Items.quantity > 5) {
-            Items.quantity--;
-            shoppingCart.push(Items);
+        if (product.quantity > 0) {
+            product.quantity--;
+            shoppingCart.push(product);
         }
         else {
             console.log("Product Out Of Stock");
@@ -505,17 +546,17 @@ function addToCart(dataId) {
     totalSum();
 }
 function cartDisplay() {
-    const cartContent = document.getElementById("table");
+    const cartContent = document.getElementById("tbody");
     localStorage.setItem("cartProducts", JSON.stringify(shoppingCart));
     cartContent.innerHTML = "";
-    shoppingCart.forEach((Items, index) =>{
+    shoppingCart.forEach((product, index) =>{
         const cartTable = document.createElement("tr");
         cartTable.innerHTML = `
             <td class="w-25">
-            <img src="${Items.image}" alt="logo-img">
+            <img src="${product.image}" style="width:100px" alt="logo-img">
             </td>
-            <td class="">${Items.desc}</td>
-            <td>R ${Items.price}</td>
+            <td class="">${product.desc}</td>
+            <td>ZAR ${product.price}</td>
             <td>
             <button class="btn btn-danger btn-sm">
             <i class="fa fa-times" onclick="deleteItems(${index})"></i>
@@ -529,10 +570,10 @@ cartDisplay();
 function totalSum () {
     const sumTotal = document.getElementById("total-price");
     let totalPrice = 0;
-    shoppingCart.forEach((Items) => {
-        totalPrice += Items.price;
-    });
+    shoppingCart.forEach((product) => {
+        totalPrice += product.price;
 
+      });
     console.log(shoppingCart);
     console.log("Total Price:", totalPrice);
     sumTotal.innerText = `Total: R ${totalPrice}`;
