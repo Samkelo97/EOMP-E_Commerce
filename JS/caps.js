@@ -118,3 +118,100 @@ let Items = [
           </div>
           </div>`;
       });
+      function filterItems() {
+        const minPrice = document.getElementById('min-price').value;
+        const maxPrice = document.getElementById('max-price').value;
+      
+        filteredItems = Items.filter((data) => {
+          const price = parseInt(data.price.replace(/\s/g, ''));
+          return price >= minPrice && price <= maxPrice;
+        });
+      
+        displayItems(filteredItems);
+      }
+      
+      displayItems(Items);
+      
+      document.getElementById('filter-button').addEventListener('click', filterItems);
+      
+      
+      document.getElementById('clear-filter-button').addEventListener('click', () => {
+        displayItems(Items);
+      });
+      
+      // add to cart
+      let shoppingCart = JSON.parse(localStorage.getItem("cartProducts")) || [];
+      function addToCart(dataId) {
+          const product = Items.find((data) => data.id === dataId);
+          if (product) {
+              if (Items.quantity > 5) {
+                  Items.quantity--;
+                  shoppingCart.push(Items);
+              }
+              else {
+                  console.log("Product Out Of Stock");
+                  alert("The product you're looking for is out of stock")
+              }
+          }
+          cartDisplay();
+          totalSum();
+      }
+      function cartDisplay() {
+          const cartContent = document.getElementById("table");
+          localStorage.setItem("cartProducts", JSON.stringify(shoppingCart));
+          cartContent.innerHTML = "";
+          shoppingCart.forEach((Items, index) =>{
+              const cartTable = document.createElement("tr");
+              cartTable.innerHTML = `
+                  <td class="w-25">
+                  <img src="${Items.image}" alt="logo-img">
+                  </td>
+                  <td class="">${Items.desc}</td>
+                  <td>R ${Items.price}</td>
+                  <td>
+                  <button class="btn btn-danger btn-sm">
+                  <i class="fa fa-times" onclick="deleteItems(${index})"></i>
+                  </button>
+                  </td>
+              `;
+              cartContent.appendChild(cartTable);
+          })
+      }
+      cartDisplay();
+      function totalSum () {
+          const sumTotal = document.getElementById("total-price");
+          let totalPrice = 0;
+          shoppingCart.forEach((Items) => {
+              totalPrice += Items.price;
+          });
+      
+          console.log(shoppingCart);
+          console.log("Total Price:", totalPrice);
+          sumTotal.innerText = `Total: R ${totalPrice}`;
+      }
+      totalSum();
+      function deleteItems(index) {
+          let cart = localStorage.getItem("cartProducts");
+          shoppingCart = JSON.parse(cart)
+          shoppingCart.splice(index, 1);
+          localStorage.setItem("cartProducts", JSON.stringify(shoppingCart));
+          totalSum();
+          cartDisplay();
+      }
+      cartDisplay()
+      function clearCart() {
+          shoppingCart = [];
+          localStorage.removeItem("cartProducts");
+          cartDisplay();
+          totalSum();
+      }
+      function checkout() {
+          if(shoppingCart.length > 0) {
+              clearCart();
+              alert("Thank you for your purchase")
+          } else {
+              alert("Your cart is empty, please add items before you checkout")
+          }
+      }
+      
+      
