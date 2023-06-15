@@ -361,7 +361,7 @@ desc:"D rose son of chi",
 price:"2 599",
 brand:"Addidas",
 category:"sneakers",
-
+quantity:"2"
 },
 {
     id:6,
@@ -370,7 +370,7 @@ category:"sneakers",
     price:"2 999",
     brand:"UA",
     category:"sneakers",
-
+quantity:"3"
 },
 {
   id:7,
@@ -379,7 +379,7 @@ category:"sneakers",
   price:"3 999",
   brand:"UA",
   category:"sneakers",
-
+quantity:"1"
 },
 {
 id:8,
@@ -388,7 +388,7 @@ desc:"original sneaker",
 price:"2 399",
 brand:"UA",
 category:"sneakers",
-
+quantity:"2"
 },
 
 {
@@ -398,7 +398,7 @@ desc:"Remote sneaker",
 price:"1 899",
 brand:"NB",
 category:"sneakers",
-
+quantity:"2"
 },
 {
 id:11,
@@ -407,7 +407,7 @@ desc:"Original runner",
 price:"4 399",
 brand:"NB",
 category:"sneakers",
-
+quantity:"2"
 },
 {
 id:
@@ -418,6 +418,7 @@ desc:"Original sneaker",
 price:"1 399",
 brand:"NB",
 category:"sneakers",
+quantity:"2"
 
 },
 ];
@@ -488,8 +489,8 @@ document.getElementById('clear-filter-button').addEventListener('click', () => {
 
 // add to cart
 let shoppingCart = JSON.parse(localStorage.getItem("cartProducts")) || [];
-function addToCart(productId) {
-    const product = Items.find((Items) => Items.id === productId);
+function addToCart(dataId) {
+    const product = Items.find((data) => data.id === dataId);
     if (product) {
         if (Items.quantity > 5) {
             Items.quantity--;
@@ -528,7 +529,7 @@ cartDisplay();
 function totalSum () {
     const sumTotal = document.getElementById("total-price");
     let totalPrice = 0;
-    shoppingCart.forEach((product) => {
+    shoppingCart.forEach((Items) => {
         totalPrice += Items.price;
     });
 
