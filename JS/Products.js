@@ -520,7 +520,6 @@ function filterItems() {
 }
 
 displayItems(Items);
-
 document.getElementById('filter-button').addEventListener('click', filterItems);
 
 
@@ -536,6 +535,7 @@ function addToCart(productId) {
         if (product.quantity > 0) {
             product.quantity--;
             shoppingCart.push(product);
+          alert("added to cart")
         }
         else {
             console.log("Product Out Of Stock");

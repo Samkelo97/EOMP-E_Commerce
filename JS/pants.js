@@ -7,6 +7,7 @@ let Items = [
       price:"1 356",
     brand:"Nike",
     category:"Pants",
+    quantity:"20",
     },
     {
       id:14,
@@ -15,6 +16,7 @@ let Items = [
       price:"1 259",
     brand:"Nike",
     category:"pants",
+    quantity:"20",
     },
     {
       id:15,
@@ -23,6 +25,7 @@ let Items = [
       price:"1 356",
     brand:"Nike",
     category:"pants",
+    quantity:"20",
     }
     ,
     {
@@ -32,6 +35,7 @@ let Items = [
       price:"1 099",
     brand:"addidas",
     category:"pants",
+    quantity:"20",
     }
     ,
     {
@@ -41,6 +45,7 @@ let Items = [
       price:"2 299",
     brand:"Addidas",
     category:"pants",
+    quantity:"20",
     }
     ,
     {
@@ -50,6 +55,7 @@ let Items = [
       price:"1 899",
     brand:"Addidas",
     category:"pants",
+    quantity:"20",
     }
     ,
     {
@@ -58,7 +64,8 @@ let Items = [
       desc:"Police Raho Watch skull addition for men",
       price:"1 999",
     brand:"UA",
-    category:"pants"
+    category:"pants",
+    quantity:"20",
     }
     ,
     {
@@ -67,7 +74,8 @@ let Items = [
       desc:"Police Raho Watch skull addition for men",
       price:"1 599",
     brand:"UA",
-    category:"pants"
+    category:"pants",
+    quantity:"20",
     }
     ,
     {
@@ -76,7 +84,8 @@ let Items = [
       desc:"Police Raho Watch skull addition for men",
       price:"1 399",
     brand:"UA",
-    category:"pants"
+    category:"pants",
+    quantity:"20",
     }
     ,
     {
@@ -85,7 +94,8 @@ let Items = [
       desc:"Police Raho Watch skull addition for men",
       price:"1 399",
     brand:"NB",
-    category:"pants"
+    category:"pants",
+    quantity:"20",
     }
     ,
     {
@@ -94,7 +104,9 @@ let Items = [
       desc:"Police Raho Watch skull addition for men",
       price:"1 299",
       brand:"NB",
-      category:"pants"
+      category:"pants",
+      quantity:"20",
+      
     
     }
     ,
@@ -105,6 +117,7 @@ let Items = [
       price:"1 899",
       brand: "NB",
       category:"pants",
+      quantity:"20",
     }];
     let dispItem = document.querySelector(".Pants");
     Items.forEach((data) => {
@@ -142,11 +155,11 @@ let Items = [
     
     // add to cart
     let shoppingCart = JSON.parse(localStorage.getItem("cartProducts")) || [];
-    function addToCart(dataId) {
-        const product = Items.find((data) => data.id === dataId);
+    function addToCart(productId) {
+        const product = Items.find((product) => product.id === productId);
         if (product) {
-            if (Items.quantity > 5) {
-                Items.quantity--;
+            if (product.quantity > 0) {
+                product.quantity--;
                 shoppingCart.push(Items);
             }
             else {
@@ -158,17 +171,17 @@ let Items = [
         totalSum();
     }
     function cartDisplay() {
-        const cartContent = document.getElementById("table");
+        const cartContent = document.getElementById("tbody");
         localStorage.setItem("cartProducts", JSON.stringify(shoppingCart));
         cartContent.innerHTML = "";
         shoppingCart.forEach((Items, index) =>{
             const cartTable = document.createElement("tr");
             cartTable.innerHTML = `
                 <td class="w-25">
-                <img src="${Items.image}" alt="logo-img">
+                <img src="${product.image}" alt="logo-img">
                 </td>
-                <td class="">${Items.desc}</td>
-                <td>R ${Items.price}</td>
+                <td class="">${product.desc}</td>
+                <td>R ${product.price}</td>
                 <td>
                 <button class="btn btn-danger btn-sm">
                 <i class="fa fa-times" onclick="deleteItems(${index})"></i>

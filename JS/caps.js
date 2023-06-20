@@ -123,7 +123,7 @@ let Items = [
         const maxPrice = document.getElementById('max-price').value;
       
         filteredItems = Items.filter((data) => {
-          const price = parseInt(data.price.replace(/\s/g, ''));
+          // const price = parseInt(data.price.replace(/\s/g,''));
           return price >= minPrice && price <= maxPrice;
         });
       
