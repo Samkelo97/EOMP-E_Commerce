@@ -51,7 +51,7 @@ quantity:"5"
 {
   id:18,
   image:"https://i.postimg.cc/tC4k2YF3/adidas-Originals-Men-s-3-stripes-Olive-Green-Cargo-Pants-removebg-preview.png",
-  desc:"olive-green cargo pants",
+  desc:"olive cargo pants",
   price:1899,
 brand:"Addidas",
 category:"pants",
@@ -61,7 +61,7 @@ quantity:"4"
 {
   id:19,
   image:"https://i.postimg.cc/9QGVmmQn/under-armor-pique-track-pants-removebg-preview.png",
-  desc:"pique track pants",
+  desc:"pique track grey trackpants pants windbraker for running and casual",
   price:1999,
 brand:"UA",
 category:"pants",
@@ -91,7 +91,7 @@ quantity:"8"
 {
   id:22,
   image:"https://i.postimg.cc/N0CgccsC/new-balance-AT-pants-removebg-preview.png",
-  desc:"AT pants",
+  desc:"Green AT pants for running or casual",
   price:1399,
 brand:"NB",
 category:"pants",
@@ -101,7 +101,7 @@ quantity:"8"
 {
   id:23,
   image:"https://i.postimg.cc/SQCpZ8Mv/impact-Core-NB-removebg-preview.png",
-  desc:"Pimpact core pants",
+  desc:"Pimpact core pants for sports and casual wear multicolored",
   price:1299,
   brand:"NB",
   category:"pants",
@@ -112,7 +112,7 @@ quantity:"8"
 {
   id:24,
   image:"https://i.postimg.cc/jdPXDH1t/grey-NB-removebg-preview.png",
-  desc:"grey pants",
+  desc:"grey pants side button up full length for casual wear and sports for men and boys multicolor",
   price:1899,
   brand: "NB",
   category:"pants",
@@ -159,7 +159,7 @@ quantity:"8"
 {
   id: 5,
   image:"https://i.postimg.cc/ncFKnVCk/Men-s-adidas-Designed-for-Gameday-Black-Full-Zip-Hoodie-removebg-preview-1.png",
-  desc: "gameday full zip hoodie",
+  desc: "gameday hoodie",
   price: 1700,
   brand:"Addidas",
   category:"jacket",
@@ -388,7 +388,7 @@ quantity:"5"
 {
   id: 5,
   image:"https://i.postimg.cc/Pf85pqyT/adidas-Originals-Men-s-NMD-Black-Sneaker-removebg-preview.png",
-  desc: "original NMD sneaker",
+  desc: "original sneaker",
   price: 2299,
   brand:"Addidas",
   category:"sneakers",
@@ -498,7 +498,7 @@ function displayItems(items) {
             <p class="text-black">${data.desc}</p>
             <p class="prices <br>">ZAR ${data.price}</p>
             <p class="prices <br">${data.brand}</p>
-            <button class="btn btn-primary" onclick="addToCart(${data.id})">Add to Cart</button>
+            <button class="btn btn-primary <br>" onclick="addToCart(${data.id})">Add to Cart</button>
           </div>
         </div>`;
     });

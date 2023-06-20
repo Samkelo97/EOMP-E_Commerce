@@ -14,14 +14,14 @@
     background-size: cover !important;
 }
 #first{
-    background-image: url(https://i.postimg.cc/8CGcf8J9/family-addidas.jpg);
+    background-image: url(https://i.postimg.cc/Z56CkznX/wint.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #second{
-    background-image: url(https://i.postimg.cc/PfZKbYPD/adidas-fam.webp);
+    background-image: url(https://i.postimg.cc/d3rQdGbD/V5-1361547-411-FC.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -33,7 +33,7 @@
 }
 #left{
     text-align: left;
-    color: white;
+    color: black;
     font-family: 'Montserrat', sans-serif;
 }
 #Right{
@@ -123,20 +123,20 @@ visibility: hidden;
     box-shadow:3px 1px 2px 3px black ;
 }
 #Men{
-    background-image: url(https://i.postimg.cc/xj6JrgsM/men.jpg);
+    background-image: url(https://i.postimg.cc/YCWcSpwq/ndida.png);
     font-family:'Montserrat', sans-serif ;
     background-repeat: no-repeat;
 }
 
 #Women{
-    background-image: url(https://i.postimg.cc/gjH9dqrX/female.webp);
+    background-image: url(https://i.postimg.cc/QMNcNdRR/nike.webp);
         font-family:'Montserrat', sans-serif ;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
 }
 #Boys{
-    background-image: url(https://i.postimg.cc/9fcHvRJN/boys.jpg);
+    background-image: url(https://i.postimg.cc/CMJTdPBX/7d76b0da762c7a1963c5c958a7af251b-500x500.webp);
         font-family:'Montserrat', sans-serif ;
         background-repeat: no-repeat;
         background-size: cover;
@@ -145,7 +145,7 @@ visibility: hidden;
 
 
 #Girls{
-    background-image: url(https://i.postimg.cc/4NcQ6C85/girl.png);
+    background-image: url(https://i.postimg.cc/524mygz7/13030288-1-green.webp);
         font-family:'Montserrat', sans-serif ;
         background-repeat: no-repeat;
         background-size: cover;
