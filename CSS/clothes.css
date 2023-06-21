@@ -1,3 +1,5 @@
 .card{
     width: 300px;
+    justify-content: space-evenly;
+    margin-left: 30px;
 }
