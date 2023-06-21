@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html>
-<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/Styles/admin.css">
   <title>Admin Page</title>
 </head>
-<body>
-  <h1>Admin Page</h1>
+<body> 
+  <!-- form for my admin submition -->
+  <form>
+    <input type="text" id="image" placeholder="Enter image URL...">
+    <input type="text" id="product-name" placeholder="Enter the product name...">
+    <input type="number" id="product-price" placeholder="Enter the product price...">
+    <input type="text" id="category" placeholder="Enter the category...">
+    <input type="number" id="quantity" placeholder="Enter the quantity...">
+    <button id="btn-add">Submit</button>
+</form>
 
-  <form id="itemForm">
-    <label for="itemId">Item ID:</label>
-    <input type="text" id="itemId" required><br><br>
+<div class="container">
+  <div class="table-container">
+    <table>
+      <thead>
+      <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Quantity</th>
+      </tr>
+      </thead>
+      <tbody id="product-list">
+      
+      </tbody>
+    </table>
+  </div>
+</div>
 
-    <label for="itemImage">Item Image URL:</label>
-    <input type="text" id="itemImage" required><br><br>
-
-    <label for="itemDesc">Item Description:</label>
-    <input type="text" id="itemDesc" required><br><br>
-
-    <label for="itemPrice">Item Price:</label>
-    <input type="text" id="itemPrice" required><br><br>
-
-    <label for="itemBrand">Item Brand:</label>
-    <input type="text" id="itemBrand" required><br><br>
-
-    <label for="itemCategory">Item Category:</label>
-    <input type="text" id="itemCategory" required><br><br>
-
-    <button type="submit">Add Item</button>
-  </form>
-
-  <h2>Items List:</h2>
-  <div id="itemsList"></div>
-
-  <script src="../JS/admin.js"></script>
-</body>
-</html>
-
-    
+<script src="/assets/Scripts/admin.js"></script>
 </body>
 </html>

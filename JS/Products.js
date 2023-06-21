@@ -513,7 +513,7 @@ function filterItems() {
 
   filteredItems = Items.filter((data) => {
     const price = parseInt(data.price.replace(/\s/g, ''));
-    return price >= minPrice && price <= maxPrice;
+    return price = minPrice && price <= maxPrice;
   });
 
   displayItems(filteredItems);

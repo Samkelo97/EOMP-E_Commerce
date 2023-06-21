@@ -1,64 +1,54 @@
-let Items = [
-    // Existing items from the provided code
-  ];
+const adminProducts = JSON.parse(localStorage.getItem("adminProducts")) || [];
 
-  const renderItems = () => {
-    const itemsList = document.getElementById("itemsList");
-    itemsList.innerHTML = "";
+function addProducts() {
+    const id = Math.floor(Math.random() * 1000000);
 
-    Items.forEach((item) => {
-      const itemCard = document.createElement("div");
-      itemCard.classList.add("card");
-      itemCard.innerHTML = `
-        <p>ID: ${item.id}</p>
-        <p>Description: ${item.desc}</p>
-        <p>Price: ${item.price}</p>
-        <p>Brand: ${item.brand}</p>
-        <p>Category: ${item.category}</p>
-        <button onclick="editItem(${item.id})">Edit</button>
-        <button onclick="deleteItem(${item.id})">Delete</button>
-      `;
-      itemsList.appendChild(itemCard);
-    });
-  };
+    const product = {
+        id,
+        image: document.getElementById("image").value,
+        name: document.getElementById("product-name").value,
+        price: parseFloat(document.getElementById("product-price").value),
+        category: document.getElementById("category").value,
+        quantity: parseInt(document.getElementById("quantity").value),
+    }
+    adminProducts.push(product);  
+    localStorage.setItem("adminProducts", JSON.stringify(adminProducts));
+    displayAdminProducts();
 
-  const addItem = (event) => {
-    event.preventDefault();
+}
 
-    const itemId = document.getElementById("itemId").value;
-    const itemImage = document.getElementById("itemImage").value;
-    const itemDesc = document.getElementById("itemDesc").value;
-    const itemPrice = document.getElementById("itemPrice").value;
-    const itemBrand = document.getElementById("itemBrand").value;
-    const itemCategory = document.getElementById("itemCategory").value;
+const addBtn = document.getElementById("btn-add");
+addBtn.addEventListener("click", addProducts)
 
-    const newItem = {
-      id: itemId,
-      image: itemImage,
-      desc: itemDesc,
-      price: itemPrice,
-      brand: itemBrand,
-      category: itemCategory,
-    };
+function displayAdminProducts() {
+    const listProducts = document.getElementById("product-list");
+   
+        listProducts.innerHTML = "";
+        adminProducts.forEach((product) => {
+            let adminTable = document.createElement("tr");
+            adminTable.innerHTML = `
+            <td>${product.id}</td>
+            <td> <img src="${product.image}"> </td>
+            <td>${product.name}</td>
+            <td>${product.price}</td>
+            <td>${product.category}</td>
+            <td>${product.quantity}</td>
+            <td>
+                <button class="deleteBtn" onclick="deleteProducts(${product.id})"> Delete </button>
+            </td>
+            `;
+            listProducts.appendChild(adminTable);
+        })
+}
+displayAdminProducts();
 
-    Items.push(newItem);
+function deleteProducts(productId) {
+    const adminIndex = adminProducts.findIndex((product) => product.id === productId);
 
-    document.getElementById("itemForm").reset();
-    renderItems();
-  };
+    if(adminIndex !== -1) {
+        adminProducts.splice(adminIndex, 1);
+    }
 
-  const editItem = (itemId) => {
-    // Logic to edit an item with the given itemId
-    // You can prompt the user for new values or use input fields to edit the values
-
-    renderItems();
-  };
-
-  const deleteItem = (itemId) => {
-    // Logic to delete an item with the given itemId
-
-    renderItems();
-  };
-
-  renderItems();
-  document.getElementById("itemForm").addEventListener("submit", addItem);
+    localStorage.setItem("adminProducts", JSON.stringify(adminProducts));
+    displayAdminProducts();
+} 
