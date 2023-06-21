@@ -1,0 +1,45 @@
+form{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items:center ;
+    display: grid;
+    padding: 30px;
+    margin: 10px;
+
+
+}
+input{
+    margin-block: 5px;
+    width: 300px;
+    height: 20px;
+    border: 2px solid lightblue;
+}
+#btn-add{
+   background-color: black;
+   color: white; 
+}
+#btn-add:hover{
+
+background-color: lightblue;
+}
+table{
+    border: 2px solid lightblue;
+    margin: auto;
+    width: 300px;
+    margin-bottom: 30px;
+}
+table tr,th{
+    border: 2px solid lightblue;
+   
+}
+.deleteBtn{
+    background-color: black;
+    color: white;
+}
+.deleteBtn:hover{
+    background-color: lightblue;
+    color: white;
+}
+h1{
+    text-align: center;
+}

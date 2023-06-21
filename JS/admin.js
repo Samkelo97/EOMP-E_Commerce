@@ -6,10 +6,11 @@ function addProducts() {
     const product = {
         id,
         image: document.getElementById("image").value,
-        name: document.getElementById("product-name").value,
+        desc: document.getElementById("product-desc").value,
         price: parseFloat(document.getElementById("product-price").value),
         category: document.getElementById("category").value,
         quantity: parseInt(document.getElementById("quantity").value),
+        brand: parseInt(document.getElementById("brand").value),
     }
     adminProducts.push(product);  
     localStorage.setItem("adminProducts", JSON.stringify(adminProducts));
@@ -27,17 +28,18 @@ function displayAdminProducts() {
         adminProducts.forEach((product) => {
             let adminTable = document.createElement("tr");
             adminTable.innerHTML = `
-            <td>${product.id}</td>
             <td> <img src="${product.image}"> </td>
-            <td>${product.name}</td>
+            <td>${product.desc}</td>
             <td>${product.price}</td>
             <td>${product.category}</td>
+             <td>${product.brand}</td>
             <td>${product.quantity}</td>
             <td>
                 <button class="deleteBtn" onclick="deleteProducts(${product.id})"> Delete </button>
             </td>
             `;
             listProducts.appendChild(adminTable);
+  
         })
 }
 displayAdminProducts();
