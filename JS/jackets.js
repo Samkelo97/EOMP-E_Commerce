@@ -120,26 +120,26 @@ let Items = [
           </div>
           </div>`;
       });
-      function filterItems() {
-        const minPrice = document.getElementById('min-price').value;
-        const maxPrice = document.getElementById('max-price').value;
+      // function filterItems() {
+      //   const minPrice = document.getElementById('min-price').value;
+      //   const maxPrice = document.getElementById('max-price').value;
       
-        filteredItems = Items.filter((data) => {
-          const price = parseInt(data.price.replace(/\s/g, ''));
-          return price >= minPrice && price <= maxPrice;
-        });
+      //   filteredItems = Items.filter((data) => {
+      //     const price = parseInt(data.price.replace(/\s/g, ''));
+      //     return price >= minPrice && price <= maxPrice;
+      //   });
       
-        displayItems(filteredItems);
-      }
+      //   displayItems(filteredItems);
+      // }
       
-      displayItems(Items);
+      // displayItems(Items);
       
-      document.getElementById('filter-button').addEventListener('click', filterItems);
+      // document.getElementById('filter-button').addEventListener('click', filterItems);
       
       
-      document.getElementById('clear-filter-button').addEventListener('click', () => {
-        displayItems(Items);
-      });
+      // document.getElementById('clear-filter-button').addEventListener('click', () => {
+      //   displayItems(Items);
+      // });
       
       // add to cart
       let shoppingCart = JSON.parse(localStorage.getItem("cartProducts")) || [];

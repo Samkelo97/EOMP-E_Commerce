@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../CSS/Products.css" />
     <title>Check out our items</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header>
       <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -48,7 +48,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   onclick="pants('')"
                   aria-current="page"
                   href="../HTML/pants.html"
@@ -104,7 +104,7 @@
       <button id="clear-filter-button">clear</button>
     </div>
     <!-- Products sections -->
-    <section class="row Products my-5" id="Pants"></section>
+    <section class="row Products justify-content-center overflow-x-hidden" id="Pants"></section>
 
     <!-- Modal -->
     <div
@@ -152,6 +152,9 @@
             </button>
             <button type="button" class="btn btn-primary" onclick="checkout()">
               checkout
+            </button>
+            <button type="button" class="btn btn-primary" onclick="clearCart()">
+              clear
             </button>
           </div>
         </div>
