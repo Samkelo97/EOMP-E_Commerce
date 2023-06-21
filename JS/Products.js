@@ -1,3 +1,5 @@
+const adminProducts = JSON.parse(localStorage.getItem("adminProducts")) || [];
+
 let Items = [
   
 {
@@ -463,6 +465,10 @@ quantity:"10"
 
 },
 ];
+
+for(let  i = 0; i < adminProducts.length; i++) {
+  Items.push(adminProducts[i]);
+}
 
   
   let dispItem = document.querySelector(".Products");
